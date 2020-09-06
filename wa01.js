@@ -23,7 +23,7 @@ urls.forEach(url => {
     
     request(url, function(error, response, body){
     if (!error && response.statusCode == 200) {
-        fs.writeFileSync(`/home/ec2-user/environment/data/` +  fileName, body);
+        fs.writeFileSync(`/home/ec2-user/environment/data/${fileName}`, body);
     }
     else {console.log("Request failed!")}
     });
