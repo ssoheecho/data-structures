@@ -2,4 +2,4 @@
 ### fall 2020
 
 ### weekly assignments:
-####assignment 1
+[x] [assignment 1](https://github.com/ssoheecho/data-structures/blob/master/wa01.js)
