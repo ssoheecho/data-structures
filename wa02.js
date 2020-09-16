@@ -1,8 +1,7 @@
 var fs = require('fs');
 var cheerio = require('cheerio');
 
-// load the thesis text file into a variable, `content`
-// this is the file that we created in the starter code from last week
+// load the correct zone html
 var content = fs.readFileSync('data/m07.html');
 
 // load `content` into a cheerio object
