@@ -44,4 +44,4 @@ console.log(addresses);
 //     thesisTitles += ($(elem).text()).trim() + '\n';
 // });
 
-fs.writeFileSync('data/zone07_1.txt', JSON.stringify(addresses));
+fs.writeFileSync('data/zone07.json', JSON.stringify(addresses));
