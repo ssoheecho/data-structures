@@ -2,7 +2,7 @@ var fs = require('fs');
 var cheerio = require('cheerio');
 
 // load the correct zone html
-var content = fs.readFileSync('data/m07.html');
+var content = fs.readFileSync('../data/m07.html');
 
 // load `content` into a cheerio object
 var $ = cheerio.load(content);
@@ -44,4 +44,4 @@ console.log(addresses);
 //     thesisTitles += ($(elem).text()).trim() + '\n';
 // });
 
-fs.writeFileSync('data/zone07.json', JSON.stringify(addresses));
+fs.writeFileSync('../data/zone07.json', JSON.stringify(addresses));

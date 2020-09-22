@@ -61,7 +61,7 @@ async.eachSeries(uniqueAddresses, function(value, callback) {
     // sleep for a couple seconds before making the next request
     setTimeout(callback, 2000);
 }, function() {
-    fs.writeFileSync('data/first.json', JSON.stringify(meetingsData));
+    fs.writeFileSync('../data/first.json', JSON.stringify(meetingsData));
     console.log('*** *** *** *** ***');
     console.log(`Number of meetings in this zone: ${meetingsData.length}`);
 });
