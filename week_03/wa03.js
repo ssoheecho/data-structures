@@ -42,7 +42,7 @@ async.eachSeries(uniqueAddresses, function(value, callback) {
         if (err){ throw err; }
 
         let tamuGeo = JSON.parse(body);
-        // console.log(tamuGeo);
+        console.log(tamuGeo);
         // FeatureMatchingResultType: 'Success'
         console.log(tamuGeo['FeatureMatchingResultType'], apiRequest);
         
