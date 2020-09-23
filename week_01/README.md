@@ -1,6 +1,6 @@
 ## week 01
 
-### assignment: 
+### [assignment](https://github.com/visualizedata/data-structures/blob/master/weekly_assignment_01.md): 
 Using the starter code below, make a request for each of the ten AA "Meeting List Agenda" pages for Manhattan.
 ```javascript
 // npm install request
