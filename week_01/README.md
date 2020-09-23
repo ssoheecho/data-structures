@@ -33,7 +33,7 @@ https://parsons.nyc/aa/m10.html
 
 ******************
 
-For this assignment, I decided to put all of the pages into an array
+For this assignment, I decided to put all of the pages into an array:
 ```javascript
 var urls = [
     "https://parsons.nyc/aa/m01.html",  
@@ -51,7 +51,7 @@ var urls = [
 ```
 then used the ```.forEach()``` method to iterate through each url and make the request. 
 
-I also split each of the url by '/' to extricate the last part of it to use as the name of the file I was creating.
+I also split each of the url by '/' to extricate the last part of it to use as the name of the file I was creating:
 ```javascript
 let splitURL = url.split("/");
 let fileName = splitURL[splitURL.length - 1]
