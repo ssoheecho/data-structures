@@ -32,7 +32,7 @@ fs.writeFileSync('data/thesisTitles.txt', thesisTitles);
 
 ******************
 
-Looking through the html, I realized that the street addresses were nested under ```<td>``` tags with ```td[style='border-bottom:1px solid #e3e3e3; width:260px']``` styling.
+Looking through the html, I realized that the street addresses were nested under ```<td>``` tags with ```style='border-bottom:1px solid #e3e3e3; width:260px'``` styling.
 Using cheerio, I parsed through the html to get the tags I needed. It returned 53 similar  ```<td>``` tags:
 ```html
 <td style="border-bottom:1px solid #e3e3e3; width:260px" valign="top">
