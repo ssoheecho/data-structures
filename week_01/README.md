@@ -1,8 +1,7 @@
-### week 01
+## week 01
 
-#### assignment: 
+### assignment: 
 Using the starter code below, make a request for each of the ten AA "Meeting List Agenda" pages for Manhattan.
-
 ```javascript
 // npm install request
 // mkdir data
@@ -16,4 +15,42 @@ request('https://parsons.nyc/thesis-2020/', function(error, response, body){
     }
     else {console.log("Request failed!")}
 });
+```
+
+"Meeting List Agenda" pages:
+```
+https://parsons.nyc/aa/m01.html  
+https://parsons.nyc/aa/m02.html  
+https://parsons.nyc/aa/m03.html  
+https://parsons.nyc/aa/m04.html  
+https://parsons.nyc/aa/m05.html  
+https://parsons.nyc/aa/m06.html  
+https://parsons.nyc/aa/m07.html  
+https://parsons.nyc/aa/m08.html  
+https://parsons.nyc/aa/m09.html  
+https://parsons.nyc/aa/m10.html   
+```
+
+For this assignment, I decided to put all of the pages into an array
+```
+var urls = [
+    "https://parsons.nyc/aa/m01.html",  
+    "https://parsons.nyc/aa/m02.html",  
+    "https://parsons.nyc/aa/m03.html",  
+    "https://parsons.nyc/aa/m04.html",  
+    "https://parsons.nyc/aa/m05.html",  
+    "https://parsons.nyc/aa/m06.html",  
+    "https://parsons.nyc/aa/m07.html",  
+    "https://parsons.nyc/aa/m08.html",  
+    "https://parsons.nyc/aa/m09.html",  
+    "https://parsons.nyc/aa/m10.html",  
+    ]
+    
+```
+then used the ```.forEach()``` method to iterate through each url and make the request. 
+
+I also split each of the url by '/' to extricate the last part of it to use as the name of the file I was creating.
+```
+let splitURL = url.split("/");
+let fileName = splitURL[splitURL.length - 1]
 ```
